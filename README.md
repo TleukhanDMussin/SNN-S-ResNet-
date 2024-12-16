@@ -5,6 +5,31 @@ This project implements a Spiking Neural Network (SNN) based on a ResNet-inspire
 
 ---
 
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone <[repository_url](https://github.com/TleukhanDMussin/SNN-S-ResNet-.git)>
+   cd <S-ResNet>
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install torch torchvision tonic matplotlib tqdm
+   ```
+
+3. Prepare the dataset:
+   The DVS Gesture dataset will be automatically downloaded and processed by the `tonic` library.
+
+4. Train the model:
+   ```bash
+   python Test_SNN.py
+   ```
+
+5. Check validation performance and view saved checkpoints:
+   - The best model checkpoint is saved as `model_best.pth.tar`.
+
+---
+
 ## Files in the Repository
 
 ### 1. `SResNet.py`
@@ -80,30 +105,6 @@ During validation:
 - The model's predictions are compared against ground truth labels.
 - Accuracy is calculated using the top-1 and top-5 metrics.
 
----
-
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd <repository_folder>
-   ```
-
-2. Install dependencies:
-   ```bash
-   pip install torch torchvision tonic matplotlib tqdm
-   ```
-
-3. Prepare the dataset:
-   The DVS Gesture dataset will be automatically downloaded and processed by the `tonic` library.
-
-4. Train the model:
-   ```bash
-   python Test_SNN.py
-   ```
-
-5. Check validation performance and view saved checkpoints:
-   - The best model checkpoint is saved as `model_best.pth.tar`.
 
 ---
 
