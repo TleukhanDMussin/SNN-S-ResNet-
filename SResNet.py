@@ -14,7 +14,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print("device", device)
 thresh = 0.5  # neuronal threshold
 lens = 0.5/3  # hyper-parameters of approximate function
-decay = 0.5  # decay constants
+decay = 0.9  # decay constants
 
 
 # approximate firing function
